@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Neck Rest Premium - Kenyamanan Perjalanan Anda</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f8f8;
+        }
+        
+        .gold-text {
+            background: linear-gradient(90deg, #CFB53B, #F5E7A1, #CFB53B);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .gold-border {
+            border: 1px solid #CFB53B;
+        }
+        
+        .promo-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: #CFB53B;
+            color: #000;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transform: rotate(15deg);
+        }
+        
+        .countdown-box {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border: 1px solid #CFB53B;
+        }
+        
+        .testimonial-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            border-left: 4px solid #CFB53B;
+        }
+        
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .color-option {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .color-option:hover, .color-option.active {
+            transform: scale(1.1);
+            border-color: #CFB53B;
+        }
+        
+        .promo-image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        
+        .promo-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+            padding: 20px;
+        }
+        
+        .price-before {
+            position: relative;
+        }
+        
+        .price-before::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 2px;
+            background: #CFB53B;
+            transform: translateY(-50%) rotate(-5deg);
+        }
+        
+        @media (max-width: 768px) {
+            .promo-badge {
+                width: 50px;
+                height: 50px;
+                font-size: 12px;
+                top: -10px;
+                right: -10px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-200">
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMW4weWM0czV6ZmwzcThjYnZkM29janU2a3U0amc2NWFzYnptYm1pdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HrEIIJL0FKBj9vwA2h/giphy.gif" alt="Travel Neck Rest" class="w-full h-auto object-cover">
+    </div>
+    
+    <!-- Product Title & Description -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 gold-text">Travel Neck Rest</h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">🌟 Nikmati perjalanan yang lebih nyaman dengan bantal leher travel ergonomis ini. Dirancang khusus untuk mendukung leher dan kepala saat duduk lama di pesawat, mobil, atau kereta, sehingga mengurangi rasa pegal dan nyeri.</p>
+        </div>
+    </div>
+    
+    <!-- Product Features -->
+    <div class="bg-gray-900 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gold-text">Keunggulan Produk</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-gray-800 rounded-lg p-6 text-center product-card">
+                    <div class="text-3xl mb-4 gold-text"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Desain Ergonomis</h3>
+                    <p class="text-gray-300">Memberikan dukungan maksimal pada leher dan kepala.</p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg p-6 text-center product-card">
+                    <div class="text-3xl mb-4 gold-text"><i class="fas fa-plane"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Ideal untuk Perjalanan</h3>
+                    <p class="text-gray-300">Cocok untuk digunakan saat naik pesawat, mobil, atau kereta.</p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg p-6 text-center product-card">
+                    <div class="text-3xl mb-4 gold-text"><i class="fas fa-wind"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Material Lembut & Bernapas</h3>
+                    <p class="text-gray-300">Memberikan kenyamanan ekstra tanpa membuat gerah.</p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg p-6 text-center product-card">
+                    <div class="text-3xl mb-4 gold-text"><i class="fas fa-broom"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Sarung Dapat Dilepas</h3>
+                    <p class="text-gray-300">Mudah dibersihkan dan selalu higienis.</p>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg p-6 text-center product-card">
+                    <div class="text-3xl mb-4 gold-text"><i class="fas fa-suitcase"></i></div>
+                    <h3 class="text-xl font-semibold mb-2">Ringan & Mudah Dibawa</h3>
+                    <p class="text-gray-300">Bisa dilipat dan dimasukkan ke dalam tas tanpa memakan tempat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Product Details -->
+    <div class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gold-text">Detail Produk</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="https://i.postimg.cc/sDVt0T1C/01.png" alt="Detail Produk 1" class="w-full h-auto">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 gold-text">Desain Premium</h3>
+                        <p class="text-gray-300">Dibuat dengan material berkualitas tinggi untuk kenyamanan maksimal.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg overflow-hidden">
+                    <img src="https://i.postimg.cc/8Ptq8LrJ/02.png" alt="Detail Produk 2" class="w-full h-auto">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 gold-text">Fleksibel & Nyaman</h3>
+                        <p class="text-gray-300">Dapat disesuaikan dengan bentuk leher Anda untuk dukungan sempurna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Color Variants -->
+    <div class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gold-text">Varian Warna</h2>
+            
+            <div class="flex justify-center gap-8 flex-wrap">
+                <div class="text-center">
+                    <div class="color-option active mx-auto mb-2" style="background-color: #3b82f6;"></div>
+                    <span class="text-gray-300">Biru</span>
+                </div>
+                <div class="text-center">
+                    <div class="color-option mx-auto mb-2" style="background-color: #ec4899;"></div>
+                    <span class="text-gray-300">Pink</span>
+                </div>
+                <div class="text-center">
+                    <div class="color-option mx-auto mb-2" style="background-color: #9ca3af;"></div>
+                    <span class="text-gray-300">Abu</span>
+                </div>
+                <div class="text-center">
+                    <div class="color-option mx-auto mb-2" style="background-color: #92400e;"></div>
+                    <span class="text-gray-300">Coklat</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Testimonials -->
+    <div class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 gold-text">Testimoni Pelanggan</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="testimonial-card rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl gold-text">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Budi Santoso</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Saya sering melakukan perjalanan bisnis dan bantal ini benar-benar mengubah pengalaman saya. Tidak ada lagi sakit leher setelah penerbangan panjang!"</p>
+                </div>
+                
+                <div class="testimonial-card rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl gold-text">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Dewi Lestari</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Materialnya sangat lembut dan nyaman. Anak-anak saya juga suka menggunakannya saat perjalanan panjang. Worth every penny!"</p>
+                </div>
+                
+                <div class="testimonial-card rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-700 flex items-center justify-center text-xl gold-text">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold">Agus Setiawan</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Sebagai supir travel, produk ini sangat membantu mengurangi kelelahan selama perjalanan jauh. Desainnya ergonomis dan mudah dibawa."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Promo Countdown -->
+    <div class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6 gold-text">Promo Spesial Hari Ini!</h2>
+                <p class="text-xl text-gray-300 mb-8">Diskon akan berakhir dalam:</p>
+                
+                <div class="countdown-box rounded-lg p-6 max-w-md mx-auto mb-8">
+                    <div class="flex justify-between">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gold-text" id="countdown-hours">12</div>
+                            <div class="text-gray-300">Jam</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gold-text" id="countdown-minutes">45</div>
+                            <div class="text-gray-300">Menit</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold gold-text" id="countdown-seconds">30</div>
+                            <div class="text-gray-300">Detik</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-gray-300 mb-8">
+                    <p>📦 Pengiriman 2 - 4 Hari Setelah Pemesanan</p>
+                    <p>🏠 Mohon Isi Alamat Dengan Lengkap</p>
+                    <p>✅ 100% Product Original</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Pricing & Order Section -->
+    <div class="py-16 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="promo-image-container mb-8">
+                    <img src="https://i.postimg.cc/vZgNxkcM/03.png" alt="Promo Diskon" class="w-full h-auto">
+                    <div class="promo-overlay">
+                        <h3 class="text-2xl font-bold gold-text">PROMO SPESIAL HARI INI</h3>
+                        <p class="text-gray-200">Dapatkan Diskon Spesial Untuk Hari Ini Saja, Harga Akan Kembali Normal Setelah:</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 rounded-lg p-8 relative">
+                    <div class="promo-badge">
+                        <div>DISKON<br>33%</div>
+                    </div>
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div>
+                            <h3 class="text-2xl font-bold gold-text mb-2">Travel Neck Rest</h3>
+                            <div class="flex items-center gap-4">
+                                <div class="text-3xl font-bold gold-text">Rp185.000</div>
+                                <div class="text-xl text-gray-400 price-before">Rp277.500</div>
+                            </div>
+                            <p class="text-green-400 mt-2">Anda Hemat Rp92.500!</p>
+                        </div>
+                        
+                        <div class="w-full md:w-auto">
+                            <div class="ooef">
+                                <form class="orderonline-embed-form" data-username="rara" data-product-slug="travel-neck-rest77" data-product-id="689f76593adb49e0e203f454" id="oo-embed-form-travel-neck-rest77-9295" data-origin="orderonline">
+                                    <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                                </form>
+                            </div>
+                            <script>
+                                if (typeof xLogError != 'function') {
+                                    var xLogError = function (error) {
+                                        var req = new XMLHttpRequest();
+                                        var payload = JSON.stringify({
+                                            url: document.location.href,
+                                            line: error.line,
+                                            stack: error.stack
+                                        });
+                                        var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                                        req.open('POST', 'https://api.orderonline.id/log', true);
+                                        req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                                        req.send(params);
+                                    };
+                                }
+                                try {
+                                    if (typeof xEmbedScript != 'function') {
+                                        var xEmbedScript = function () {
+                                            !function(w, d, e, v, id, t, s) {
+                                                if (d.getElementById(id)) return;
+                                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                                s = d.getElementsByTagName(e)[0];
+                                                s.parentNode.insertBefore(t, s);
+                                            }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                                        };
+                                    }
+                                    if (typeof xEmbedInit != 'function') {
+                                        var xEmbedInit = function (w, n) {
+                                            if (w.ooe) return;
+                                            n = w.ooe = function() {
+                                                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                            };
+                                            if (!w._ooe) w._ooe = n;
+                                            n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                                        };
+                                    }
+                                    xEmbedInit(window);
+                                    ooe('setup', 'redirect', 'https://rara.orderonline.id');
+                                    ooe('init', '5f12ee789d8e8e5e870172ee', '689f76593adb49e0e203f454', '689f76593adb49e0e203f455', 'oo-embed-form-travel-neck-rest77-9295', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                                    if (!window.jQuery) {
+                                        !function(w, d, e, v, id, t, s) {
+                                            if (d.getElementById(id)) return;
+                                            t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                            t.addEventListener('load', xEmbedScript);
+                                            s = d.getElementsByTagName(e)[0];
+                                            s.parentNode.insertBefore(t, s);
+                                        }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                                    } else {
+                                        xEmbedScript();
+                                    }
+                                } catch (e) {
+                                    xLogError(e);
+                                    throw e;
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-400">
+            <p>© 2023 Travel Neck Rest Premium. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const now = new Date();
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
+            
+            const diff = midnight - now;
+            
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            document.getElementById('countdown-hours').textContent = hours.toString().padStart(2, '0');
+            document.getElementById('countdown-minutes').textContent = minutes.toString().padStart(2, '0');
+            document.getElementById('countdown-seconds').textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+        
+        // Color Selection
+        const colorOptions = document.querySelectorAll('.color-option');
+        colorOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                colorOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
